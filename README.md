@@ -1,6 +1,8 @@
-# Aplicativo Expo 
+# Crud RealmDB - To-do List
 
-Este é um projeto [Expo](https://expo.dev) criado com o comando [`create-expo-app`](https://www.google.com/search?q=%5Bhttps://www.npmjs.com/package/create-expo-app%5D(https://www.npmjs.com/package/create-expo-app)).
+Este é um aplicativo de lista de tarefas to-do list criado com [Expo](https://expo.dev) e React Native. O projeto usa o **Realm** como banco de dados local para salvar tarefas no dispositivo, permitindo criar, editar, concluir e apagar tarefas mesmo sem conexão à internet.
+
+O app também conta com uma interface escura, componentes estilizados e uma experiência móvel simples para gerenciamento de tarefas diárias.
 
 ---
 
