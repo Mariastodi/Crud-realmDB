@@ -1,56 +1,82 @@
-# Welcome to your Expo app 👋
+# Aplicativo Expo 
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um projeto [Expo](https://expo.dev) criado com o comando [`create-expo-app`](https://www.google.com/search?q=%5Bhttps://www.npmjs.com/package/create-expo-app%5D(https://www.npmjs.com/package/create-expo-app)).
 
-## Get started
+---
 
-1. Install dependencies
+## Como Começar
 
-   ```bash
-   npm install
-   ```
+Siga os passos abaixo para configurar e executar o projeto localmente.
 
-2. Start the app
+### 1. Instalar as dependências
 
-   ```bash
-   npx expo start
-   ```
+No seu terminal, execute:
 
-In the output, you'll find options to open the app in a
+```bash
+npm install
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 2. Configurar o ambiente 
 
-## Get a fresh project
+> **Nota sobre o Realm:** Como este aplicativo utiliza o **Realm** como banco de dados, o *Expo Go* tradicional não conseguirá executá-lo diretamente devido aos módulos nativos. É necessário gerar um **Development Build** (compilação de desenvolvimento).
 
-When you're ready, run:
+Instale o cliente de desenvolvimento e execute o projeto no Android ou iOS:
+
+```bash
+# Instalar o cliente de desenvolvimento
+npx expo install expo-dev-client
+
+# Executar no Android
+npx expo run:android
+
+# Executar no iOS (se estiver no macOS)
+npx expo run:ios
+
+```
+
+> **Dica:** Utilize o Android Studio, o simulador do Xcode ou um dispositivo físico configurado com o Expo Development Build para rodar esta lista de tarefas baseada em Realm.
+
+---
+
+## Desenvolvimento
+
+Após iniciar o servidor, você verá as opções para abrir o aplicativo em diferentes ambientes:
+
+* **[Development Build](https://docs.expo.dev/develop/development-builds/introduction/):** Recomendado para este projeto.
+* **[Android Emulator](https://docs.expo.dev/workflow/android-studio-emulator/):** Simulador do Android Studio.
+* **[iOS Simulator](https://docs.expo.dev/workflow/ios-simulator/):** Simulador do Xcode (apenas macOS).
+* **[Expo Go](https://expo.dev/go):** Um sandbox limitado (não recomendado para este projeto devido ao Realm).
+
+Para começar a programar, edite os arquivos dentro do diretório **`app`**. Este projeto utiliza [roteamento baseado em arquivos (file-based routing)](https://docs.expo.dev/router/introduction).
+
+---
+
+## Limpar o Projeto 
+
+Se você quiser remover o código de exemplo e começar um projeto totalmente limpo, execute:
 
 ```bash
 npm run reset-project
+
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Este comando moverá o código inicial para a pasta **`app-example`** e criará um diretório **`app`** totalmente em branco para você iniciar o seu desenvolvimento.
 
-### Other setup steps
+---
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+## Outras Configurações
 
-## Learn more
+* **Qualidade de Código:** Para configurar o ESLint, execute `npx expo lint` ou siga o guia sobre [Usando ESLint e Prettier](https://docs.expo.dev/guides/using-eslint/).
+* **Testes Automatizados:** Se desejar configurar testes unitários, siga o guia de [Testes Unitários com Jest](https://docs.expo.dev/develop/unit-testing/).
+* **TypeScript:** Saiba mais sobre a configuração do TypeScript inclusa neste template no guia [Usando TypeScript](https://docs.expo.dev/guides/typescript/).
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Saiba Mais
 
-## Join the community
+Para se aprofundar no desenvolvimento com Expo, confira os seguintes recursos oficiais:
 
-Join our community of developers creating universal apps.
+* **[Documentação do Expo](https://docs.expo.dev/):** Aprenda os fundamentos ou explore tópicos avançados em nossos guias.
+* **[Tutorial Aprenda Expo](https://docs.expo.dev/tutorial/introduction/):** Um passo a passo prático onde você criará um app que roda em Android, iOS e Web.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
